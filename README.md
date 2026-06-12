@@ -1,5 +1,7 @@
 # Rubato — AI 여행 경로 추천 앱
 
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white) ![Naver Map](https://img.shields.io/badge/Naver_Map-03C75A?style=for-the-badge&logo=naver&logoColor=white)
+
 **2024 LINC 3.0 캡스톤디자인 경진대회 대상** (연성대학교)
 
 사용자의 취향 태그(미식, 출사, 가족여행 등)를 기반으로 AI가 여행 일정을 생성하고, 지도 위에 동선을 시각화해 주는 Android 앱.
@@ -8,6 +10,14 @@
 ## 데모
 
 전체 시연 영상, 기능별 데모 클립, 설치용 APK: [Releases v1.0](https://github.com/deltaomega02/rubato/releases/tag/v1.0)
+
+## 스크린샷
+
+| 태그·날짜 선택 → 일정 생성 | 지도 경로 시각화 |
+|:---:|:---:|
+| <img src="docs/screenshots/01-tag-to-route-flow.png" width="420"> | <img src="docs/screenshots/02-route-map.png" width="420"> |
+| **능동형 인터뷰 챗봇** | **지역별 장소 추천** |
+| <img src="docs/screenshots/03-chatbot.png" width="420"> | <img src="docs/screenshots/04-place-recommend.png" width="420"> |
 
 ## 기술 스택
 
