@@ -1,0 +1,7 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="36.00dp" android:height="36.00dp" android:viewportWidth="36" android:viewportHeight="36">
+<!--  검색 아이콘  -->
+    <group>
+        <path android:fillColor="#FFFFFFFF" android:pathData="M18 0a18 18 0 1 0 0 36 18 18 0 1 0 0-36z"/>
+        <path android:strokeColor="#FF1E1E1E" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M27 27l-4.35-4.35M25 17c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8 8 3.58 8 8Z"/>
+    </group>
+</vector>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/region_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawable_gray_circle"
+        android:background="@drawable/drawable_gray_circle"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/region_logo_image"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawable_gray_circle"/>
+
+    <TextView
+        android:id="@+id/region_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/region_image"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="지역명"
+        android:textSize="10sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/remove_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignEnd="@id/region_image"
+        android:layout_marginEnd="-5dp"
+        android:layout_alignTop="@id/region_image"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/ic_x_mark"
+        android:background="@drawable/drawable_white_circle_filled"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

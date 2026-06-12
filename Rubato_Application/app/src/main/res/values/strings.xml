@@ -1,0 +1,461 @@
+<resources>
+    <string name="app_name">YSU_Capstone</string>
+    <!-- 태그 옵션 -->
+    <string-array name="tag_options">
+        <item>친환경</item>
+        <item>단풍 구경 명소</item>
+        <item>자전거 여행</item>
+        <item>경치 좋은 카페</item>
+        <item>역사 여행</item>
+        <item>해변 명소</item>
+        <item>핫플레이스</item>
+        <item>인생샷 명소</item>
+        <item>문화 체험</item>
+        <item>미식 여행</item>
+        <item>가족 여행</item>
+        <item>쇼핑 명소</item>
+        <item>전통 체험</item>
+        <item>산책 코스</item>
+        <item>온천 여행</item>
+        <item>야경 명소</item>
+        <item>국립공원 탐방</item>
+        <item>낚시 여행</item>
+        <item>캠핑 명소</item>
+        <item>도시 여행</item>
+        <item>산악 등반</item>
+        <item>농촌 체험</item>
+        <item>문화유산 답사</item>
+        <item>해양 스포츠</item>
+        <item>현지인 추천 장소</item>
+        <item>드라이브 코스</item>
+        <item>장터 탐방</item>
+        <item>야외 콘서트</item>
+        <item>트레킹 명소</item>
+        <item>도예 체험</item>
+        <item>전통 음식 체험</item>
+        <item>문화 축제</item>
+        <item>반려견 산책 명소</item>
+        <item>야생화 명소</item>
+        <item>겨울철 얼음낚시</item>
+        <item>패러글라이딩 체험</item>
+        <item>스키 여행</item>
+        <item>벚꽃 명소</item>
+        <item>조용한 마을 여행</item>
+        <item>힐링 스팟</item>
+        <item>요가 리트릿</item>
+        <item>독서 여행</item>
+        <item>사진 투어</item>
+        <item>비건 카페 탐방</item>
+        <item>치즈 체험</item>
+        <item>리조트 휴양</item>
+        <item>마을 축제</item>
+        <item>공예 마을</item>
+        <item>꽃밭 산책</item>
+        <item>음악 축제</item>
+        <item>사진 미술관</item>
+        <item>도시 예술 산책</item>
+        <item>치유 여행</item>
+        <item>호수 명소</item>
+        <item>커피 원두 투어</item>
+        <item>명상 센터</item>
+        <item>포도 농장</item>
+        <item>자연 보호구역</item>
+        <item>재즈 바</item>
+        <item>가을철 단풍 드라이브</item>
+        <item>도심 속 공원</item>
+        <item>눈썰매장</item>
+        <item>바다낚시 체험</item>
+        <item>야외 박물관</item>
+        <item>와인 농장 투어</item>
+        <item>스포츠 이벤트</item>
+        <item>전통시장 탐방</item>
+        <item>로컬 푸드 탐방</item>
+        <item>새해맞이 해돋이 명소</item>
+        <item>트래킹 코스</item>
+        <item>숲속</item>
+    </string-array>
+
+    <!--  정렬기준  -->
+    <string-array name="sort_type">
+        <item>가나다순</item>
+        <item>테마별</item>
+        <item>유형별 정렬</item>
+    </string-array>
+
+    <!-- 이동 수단 옵션 -->
+    <string-array name="tag_vehicles">
+        <item>자차이용</item>
+        <item>대중교통</item>
+        <item>자전거</item>
+        <item>도보이용</item>
+        <item>전기차</item>
+    </string-array>
+
+    <!-- 상세 옵션 -->
+    <string-array name="food_options">
+        <item>채식</item>
+        <item>할랄인증</item>
+        <item>로컬 음식 체험</item>
+    </string-array>
+
+    <string-array name="travel_style_options">
+        <item>관광지 중심</item>
+        <item>놀거리 중심</item>
+        <item>여유로운 구성</item>
+        <item>타이트한 구성</item>
+    </string-array>
+
+    <string-array name="activity_options">
+        <item>조용한 공간</item>
+        <item>실내 시설</item>
+        <item>실외 활동 가능</item>
+        <item>가벼운 걷기 코스</item>
+    </string-array>
+
+    <string-array name="special_interest_options">
+        <item>문화적 포용성</item>
+        <item>전통 체험 가능성</item>
+        <item>유적지 중심</item>
+        <item>역사적 가치가 있는 곳</item>
+    </string-array>
+
+    <string-array name="visit_characteristic_options">
+        <item>계절별 방문 추천</item>
+        <item>아이들과 함께 가기 좋은 곳</item>
+        <item>인기 시즌</item>
+        <item>사진 촬영 적합성</item>
+        <item>자연경관 중심</item>
+        <item>이벤트나 축제 개최지</item>
+    </string-array>
+
+    <!-- 지역 및 관광지 -->
+    <string-array name="location_names">
+        <item>서울</item>
+        <item>부산</item>
+        <item>제주</item>
+
+
+        <item>대구</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>울산</item>
+        <item>수원</item>
+        <item>성남</item>
+        <item>용인</item>
+        <item>고양</item>
+        <item>안산</item>
+        <item>평택</item>
+        <item>안양</item>
+        <item>인천</item>
+
+        <item>천안</item>
+        <item>전주</item>
+        <item>군산</item>
+        <item>익산</item>
+        <item>순천</item>
+        <item>여수</item>
+        <item>포항</item>
+        <item>경주</item>
+        <item>김해</item>
+        <item>창원</item>
+        <item>거제</item>
+        <item>통영</item>
+        <item>춘천</item>
+        <item>원주</item>
+        <item>강릉</item>
+        <item>속초</item>
+        <item>삼척</item>
+        <item>목포</item>
+        <item>남해</item>
+        <item>보성</item>
+        <item>담양</item>
+        <item>태안</item>
+        <item>서산</item>
+    </string-array>
+
+    <string-array name="location_logo">
+        <item>location_logo_seoul</item>
+        <item>location_logo_busan</item>
+        <item>location_logo_jeju</item>
+
+
+        <item>location_logo_daegu</item>
+        <item>location_logo_daejeon</item>
+        <item>location_logo_gwangju</item>
+        <item>location_logo_ulsan</item>
+        <item>location_logo_suwon</item>
+        <item>location_logo_seongnam</item>
+        <item>location_logo_yongin</item>
+        <item>location_logo_goyang</item>
+        <item>location_logo_ansan</item>
+        <item>location_logo_pyeongtaek</item>
+        <item>location_logo_anyang</item>
+        <item>location_logo_incheon</item>
+
+        <item>location_logo_cheonan</item>
+        <item>location_logo_jeonju</item>
+        <item>location_logo_gunsan</item>
+        <item>location_logo_iksan</item>
+        <item>location_logo_suncheon</item>
+        <item>location_logo_yeosu</item>
+        <item>location_logo_pohang</item>
+        <item>location_logo_gyeongju</item>
+        <item>location_logo_gimhae</item>
+        <item>location_logo_changwon</item>
+        <item>location_logo_geoje</item>
+        <item>location_logo_tongyoung</item>
+        <item>location_logo_chuncheon</item>
+        <item>location_logo_wonju</item>
+        <item>location_logo_gangneung</item>
+        <item>location_logo_sokcho</item>
+        <item>location_logo_samcheok</item>
+        <item>location_logo_mokpo</item>
+        <item>location_logo_namhae</item>
+        <item>location_logo_boseong</item>
+        <item>location_logo_damyang</item>
+        <item>location_logo_taean</item>
+        <item>location_logo_seosan</item>
+    </string-array>
+
+
+    <string-array name="popular_spots">
+        <item>경복궁, 남산타워, 한강공원</item>
+        <item>해운대, 광안리, 자갈치 시장</item>
+        <item>한라산, 성산일출봉, 중문 관광단지</item>
+
+
+        <item>팔공산, 서문시장, 동성로</item>
+        <item>엑스포 과학공원, 유성 온천</item>
+        <item>무등산, 5.18 기념공원, 양림동</item>
+        <item>태화강 국가정원, 대왕암공원</item>
+        <item>화성행궁, 광교호수공원</item>
+        <item>남한산성, 판교 테크노밸리</item>
+        <item>에버랜드, 한국 민속촌</item>
+        <item>일산호수공원, 킨텍스</item>
+        <item>대부도, 시화호</item>
+        <item>평택호, 안중항</item>
+        <item>안양예술공원, 평촌아트홀</item>
+        <item>차이나타운, 송도 센트럴파크</item>
+
+        <item>독립기념관, 천안삼거리공원</item>
+        <item>한옥마을, 경기전</item>
+        <item>선유도, 은파호수공원</item>
+        <item>미륵사지, 익산국가산업단지</item>
+        <item>순천만 국가정원, 드라마촬영장</item>
+        <item>여수밤바다, 오동도, 향일암</item>
+        <item>호미곶, 포항운하</item>
+        <item>불국사, 석굴암, 첨성대</item>
+        <item>김해박물관, 가야 테마파크</item>
+        <item>진해 군항제, 마산 어시장</item>
+        <item>외도 보타니아, 바람의 언덕</item>
+        <item>동피랑, 소매물도</item>
+        <item>남이섬, 소양강댐</item>
+        <item>박경리 문학공원, 뮤지엄 산</item>
+        <item>경포대, 오죽헌</item>
+        <item>설악산, 영랑호</item>
+        <item>환선굴, 해신당공원</item>
+        <item>유달산, 삼학도</item>
+        <item>남해독일마을, 상주은모래비치</item>
+        <item>녹차밭, 벌교꼬막정식</item>
+        <item>죽녹원, 메타세쿼이아길</item>
+        <item>신두리 해안사구, 천리포수목원</item>
+        <item>간월암, 해미읍성</item>
+    </string-array>
+
+    <string-array name="loc_type">
+        <item>도시,산</item> <!-- 서울 -->
+        <item>도시,바다</item> <!-- 부산 -->
+        <item>도시,산</item> <!-- 제주 -->
+
+
+        <item>도시,산</item> <!-- 대구 -->
+        <item>도시,산</item> <!-- 대전 -->
+        <item>도시,산</item> <!-- 광주 -->
+        <item>도시,바다</item> <!-- 울산 -->
+        <item>도시,산</item> <!-- 수원 -->
+        <item>도시,산</item> <!-- 성남 -->
+        <item>도시,산</item> <!-- 용인 -->
+        <item>도시,산</item> <!-- 고양 -->
+        <item>도시,바다</item> <!-- 안산 -->
+        <item>도시,바다</item> <!-- 평택 -->
+        <item>도시,산</item> <!-- 안양 -->
+        <item>도시,바다</item> <!-- 인천 -->
+
+        <item>도시,산</item> <!-- 천안 -->
+        <item>도시,산</item> <!-- 전주 -->
+        <item>도시,바다</item> <!-- 군산 -->
+        <item>도시,산</item> <!-- 익산 -->
+        <item>시골,산</item> <!-- 순천 -->
+        <item>시골,바다</item> <!-- 여수 -->
+        <item>도시,바다</item> <!-- 포항 -->
+        <item>도시,산</item> <!-- 경주 -->
+        <item>도시,산</item> <!-- 김해 -->
+        <item>도시,바다</item> <!-- 창원 -->
+        <item>시골,바다</item> <!-- 거제 -->
+        <item>시골,바다</item> <!-- 통영 -->
+        <item>시골,산</item> <!-- 춘천 -->
+        <item>시골,산</item> <!-- 원주 -->
+        <item>시골,바다</item> <!-- 강릉 -->
+        <item>시골,바다</item> <!-- 속초 -->
+        <item>시골,바다</item> <!-- 삼척 -->
+        <item>시골,바다</item> <!-- 목포 -->
+        <item>시골,바다</item> <!-- 남해 -->
+        <item>시골,산</item> <!-- 보성 -->
+        <item>시골,산</item> <!-- 담양 -->
+        <item>시골,바다</item> <!-- 태안 -->
+        <item>시골,산</item> <!-- 서산 -->
+    </string-array>
+
+    <array name="poster_image">
+        <item>@drawable/img_poster_pyeongchang</item>
+        <item>@drawable/img_poster_inje</item>
+        <item>@drawable/img_poster_hwacheon</item>
+        <item>@drawable/img_poster_geoje</item>
+        <item>@drawable/img_poster_damyang</item>
+        <item>@drawable/img_poster_jecheon</item>
+        <item>@drawable/img_poster_andong</item>
+        <item>@drawable/img_poster_gapyeong</item>
+    </array>
+
+    <string-array name="poster_title">
+        <item>평창</item>
+        <item>인제</item>
+        <item>화천</item>
+        <item>거제</item>
+        <item>담양</item>
+        <item>제천</item>
+        <item>안동</item>
+        <item>가평</item>
+    </string-array>
+
+    <string-array name="place_names">
+        <!-- 관광지 -->
+        <item>해운대 해수욕장</item>
+        <item>광안리 해수욕장</item>
+        <item>부산 타워</item>
+        <item>감천문화마을</item>
+        <item>태종대</item>
+        <item>동백섬</item>
+        <item>오륙도 스카이워크</item>
+        <item>송도 해상 케이블카</item>
+
+        <!-- 식당 -->
+        <item>돼지국밥 거리 (서면)</item>
+        <item>밀면 맛집 (초량밀면)</item>
+        <item>마산 아구찜 (해운대)</item>
+        <item>국제시장 씨앗호떡</item>
+        <item>기장 대게 거리</item>
+        <item>자갈치 시장 회센터</item>
+        <item>해운대 맛집 (더베이 101)</item>
+    </string-array>
+
+    <string-array name="place_addresses">
+        <!-- 관광지 -->
+        <item>부산광역시 해운대구 해운대해변로 264</item> <!-- 해운대 해수욕장 -->
+        <item>부산광역시 수영구 광안해변로 219</item> <!-- 광안리 해수욕장 -->
+        <item>부산광역시 중구 용두산길 37-55</item> <!-- 부산 타워 -->
+        <item>부산광역시 사하구 감내2로 177-11</item> <!-- 감천문화마을 -->
+        <item>부산광역시 영도구 전망로 24</item> <!-- 태종대 -->
+        <item>부산광역시 해운대구 동백로 99</item> <!-- 동백섬 -->
+        <item>부산광역시 남구 오륙도로 137</item> <!-- 오륙도 스카이워크 -->
+        <item>부산광역시 서구 암남동 송도해안길 171</item> <!-- 송도 해상 케이블카 -->
+
+        <!-- 식당 -->
+        <item>부산광역시 부산진구 부전동</item> <!-- 돼지국밥 거리 (서면) -->
+        <item>부산광역시 동구 초량로 36</item> <!-- 밀면 맛집 (초량밀면) -->
+        <item>부산광역시 해운대구 우동</item> <!-- 마산 아구찜 (해운대) -->
+        <item>부산광역시 중구 국제시장길 14</item> <!-- 국제시장 씨앗호떡 -->
+        <item>부산광역시 기장군 기장읍 대게거리</item> <!-- 기장 대게 거리 -->
+        <item>부산광역시 중구 남포동 자갈치해안로 52</item> <!-- 자갈치 시장 회센터 -->
+        <item>부산광역시 해운대구 마린시티1로 52</item> <!-- 해운대 맛집 (더베이 101) -->
+    </string-array>
+
+
+    <string-array name="tooltips">
+        <item>앱 제작 초기 여행경비로 최대 93조가 나온적이 있어요!</item>
+        <item>GPT는 롯데월드 입장료를 18억으로 계산했답니다!</item>
+        <item>심대현, 이종훈 어서 일해라!</item>
+        <item>여행 데이터 로딩 중... 오늘도 서버가 땀을 흘리고 있어요!</item>
+        <item>초기 버전에서 모든 장소가 해발 3,000m 이상으로 표시된 적이 있었답니다!</item>
+        <item>최적의 여행 경로를 찾기 위해 AI가 200만 가지 경우를 검토 중이에요!</item>
+        <item>처음에는 지도에 모든 마커가 남극에 찍혔던 거 알고 계셨나요?</item>
+        <item>잠시만 기다려 주세요! AI가 여행지를 검색하며 잠깐 커피를 마시는 중!</item>
+        <item>테스트 중 제주도가 미국 캘리포니아로 표시되었던 적이 있어요!</item>
+        <item>AI가 &quot;해수욕장&quot;을 &quot;수영장&quot;으로 착각해 마을 곳곳에 수영장을 표시했었죠!</item>
+    </string-array>
+
+
+
+    <!-- 삭제 예정 -->
+    <string name="naver_api_key_id">YOUR_NAVER_CLIENT_ID</string>
+    <string name="naver_api_key">YOUR_NAVER_CLIENT_SECRET</string>
+    <string name="google_maps_key">YOUR_GOOGLE_API_KEY</string>
+
+
+
+        <!-- 유명 핫플레이스 -->
+        <string name="theme_movie_spots">
+        유명 핫플레이스에서 인생샷을 남기고 특별한 순간을 경험하세요. &#10;
+        다양한 테마가 어우러진 곳에서 취향에 맞는 여행을 즐겨보세요.&#10;
+        트렌디한 카페와 레스토랑도 함께 탐방해보세요!
+        </string>
+
+        <!-- 역사적 장소 -->
+        <string name="theme_historic_places">
+        오래된 시간 속으로의 여행, 과거와 만나는 순간!&#10;
+        문화유산이 가득한 곳에서 역사와 전통을 배워보세요.&#10;
+        매 순간 감동이 깃든 특별한 경험을 만들어보세요.
+        </string>
+
+        <!-- 자전거 여행 명소 -->
+        <string name="theme_bike_trails">
+        페달을 밟으며 느끼는 자유와 자연의 아름다움!&#10;
+        바람과 함께하는 경치 좋은 자전거 코스.&#10;
+        여유롭게 즐기는 여행의 매력을 느껴보세요.
+        </string>
+
+        <!-- 도보 20마일 여행 -->
+        <string name="theme_walking_trails">
+        걷는 만큼 더 가까워지는 새로운 풍경!&#10;
+        발걸음마다 느껴지는 자연과 도심의 조화로운 매력.&#10;
+        20마일은 대략 32km 정도 된다고 합니다!&#10;
+        </string>
+
+        <!-- 사진촬영 명소 -->
+        <string name="theme_photo_spots">
+        당신의 카메라가 사랑할 완벽한 포토스팟!&#10;
+        자연의 빛과 아름다운 풍경이 어우러진 최고의 사진 명소.&#10;
+        소중한 추억을 멋진 사진으로 남겨보세요.
+        </string>
+
+        <!-- 유명, 분위기 좋은 카페들 -->
+        <string name="theme_cafes">
+        커피 한 잔과 함께 여유를 즐길 수 있는 특별한 공간.&#10;
+        감성 가득한 인테리어와 환상적인 경치를 만나보세요.&#10;
+        힐링이 필요한 당신을 위한 완벽한 쉼터입니다.
+        </string>
+
+        <!-- 겨울여행 필수 여행지 -->
+        <string name="theme_winter_destinations">
+        눈 내린 대자연 속에서 겨울의 낭만을 만끽하세요.&#10;
+        스키, 얼음낚시, 해돋이 명소까지!&#10;
+        겨울철에만 즐길 수 있는 특별한 여행을 떠나보세요.
+        </string>
+
+        <!-- 레저, 캠핑 -->
+        <string name="theme_leisure_camping">
+        자연 속에서 만끽하는 스릴 넘치는 액티비티와 캠핑!&#10;
+        패러글라이딩부터 숲속 힐링까지 모든 것을 경험해보세요.&#10;
+        새로운 도전을 즐기는 당신을 위한 완벽한 여행입니다.
+        </string>
+
+
+    <!-- 지역별 팁 -->
+    <string-array name="area_tip">
+        <item>속초 - 설악산과 속초 해변의 조화로움이 아름답습니다.&#10;대게와 오징어순대 같은 지역 특산물도 놓치지 마세요.&#10;드라마 속 배경을 떠올리며 사진을 찍어보세요!</item>
+        <item>부산 - 해운대와 광안대교의 야경이 필수 코스!&#10;남포동에서 먹거리 투어를 즐겨보세요.&#10;감천문화마을에서는 독특한 예술 작품을 감상해 보세요.</item>
+        <item>제주도 - 한라산에서의 등산과 중문 관광단지의 럭셔리를 동시에!&#10;돌하르방과 흑돼지를 경험하며 제주만의 매력을 느껴보세요.&#10;유네스코 지정 자연 유산 지역도 꼭 방문하세요.</item>
+        <item>서울 - 경복궁에서 전통과 현대가 어우러진 풍경을 감상하세요.&#10;한강 공원에서 여유로운 산책을 즐기며 힐링하세요.&#10;남산타워에서 도시의 야경을 만끽해 보세요.</item>
+    </string-array>
+
+</resources>

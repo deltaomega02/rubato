@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp">
+
+        <!-- 상단부 로고 -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:background="@drawable/ic_rubato_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="30dp"/>
+
+        <!-- 메뉴 아이콘 -->
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_user_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"/>
+
+        <!--    검색아이콘    -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search_white"
+            app:layout_constraintEnd_toStartOf="@+id/menu_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="13dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search_white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 인기 지역 영역 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/popular_areas"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@+id/search_icon"
+            android:elevation="20dp">
+
+            <!-- 제목부 -->
+            <TextView
+                android:id="@+id/text_ranking"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="19dp"
+                android:text="인기지역"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:background="@drawable/drawable_white_stroke_rectangle_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"/>
+
+
+            <!-- 인기지역 리스트 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_popular_areas"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- 속초 -->
+                <FrameLayout
+                    android:id="@+id/popular_area"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    app:layout_constraintEnd_toStartOf="@+id/popular_area1"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_sokcho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="속초"
+                        android:textColor="#FFFFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <!-- 부산 -->
+                <FrameLayout
+                    android:id="@+id/popular_area1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    app:layout_constraintEnd_toStartOf="@+id/popular_area2"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toEndOf="@+id/popular_area"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_busan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="부산"
+                        android:textColor="#FFFFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <!-- 제주도 -->
+                <FrameLayout
+                    android:id="@+id/popular_area2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    app:layout_constraintEnd_toStartOf="@+id/popular_area3"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toEndOf="@+id/popular_area1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/text_jeju"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="제주도"
+                        android:textColor="#FFFFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <!-- 서울 -->
+                <FrameLayout
+                    android:id="@+id/popular_area3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toEndOf="@+id/popular_area2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_seoul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="서울"
+                        android:textColor="#FFFFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 추천여행지 영역 -->
+        <include
+            layout="@layout/inc_recommended_places"
+            android:id="@+id/recommended_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--   계절 추천 여행지    -->
+        <include
+            layout="@layout/inc_season_scroll_area"
+            android:id="@+id/season_scroll_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/recommended_places"
+            app:layout_constraintBottom_toTopOf="@+id/options_area"/>
+
+
+
+        <!-- 개발자 추천 테마 -->
+        <include
+            layout="@layout/inc_search_area"
+            android:id="@+id/options_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="85dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--     바텀시트 : 여행루트 | 일정짜기 영역-->
+    <include
+        layout="@layout/inc_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/options_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 우측 상단 더보기 클릭시 -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <include
+            layout="@layout/inc_activity_menu"
+            android:id="@+id/drawer_content" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

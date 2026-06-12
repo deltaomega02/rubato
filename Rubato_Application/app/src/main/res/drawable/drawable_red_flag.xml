@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="28dp"
+    android:viewportWidth="24"
+    android:viewportHeight="28">
+
+
+
+    <path android:fillColor="#FFFC6A6A"
+        android:pathData="M8 24c0-2.21 1.79-4 4-4h0c2.21 0 4 1.79 4 4v0c0 2.21-1.79 4-4 4h0c-2.21 0-4-1.79-4-4z"/>
+
+
+    <!-- 압정 머리 (위쪽 둥근 부분) -->
+    <!-- 압정 머리 (위쪽 둥근 부분) -->
+    <path
+        android:fillColor="#FF3E4D"
+        android:pathData="M7,1C7,0 17,0 17,1C17,4 7,4 7,1Z" />
+    <!-- x 좌표를 1씩 줄이고, 너비를 늘려 크기 증가 -->
+
+    <!-- 좁아졌다 넓어지는 몸체 -->
+    <path
+        android:fillColor="#FF3E4D"
+        android:pathData="M9,2C9,2 15,2 15,2L15,7C15,8.33 13.33,10 12,10C10.67,10 9,8.33 9,7L9,2Z" />
+    <!-- 좌우로 1씩 확장하고 높이를 약간 늘림 -->
+
+    <!-- 넓은 몸체 (아래쪽 둥근 부분) -->
+    <path
+        android:fillColor="#FF3E4D"
+        android:pathData="M7,8C7,7 17,7 17,8C17,11 7,11 7,8Z" />
+    <!-- x 좌표를 1씩 줄이고, 높이를 약간 늘려 크기 증가 -->
+
+    <!-- 금속 핀 몸체 -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M11,10 L13,10 L13,20 L11,20Z" />
+    <!-- 금속 핀의 높이를 줄이기 위해 y2 좌표를 40 -> 30으로 수정 -->
+
+    <!-- 뾰족한 핀 끝 -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M11,20 L13,20 L12,28Z" />
+    <!-- 뾰족한 핀 끝 부분도 높이를 줄여 연결 -->
+
+</vector>

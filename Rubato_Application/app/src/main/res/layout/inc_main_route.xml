@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_route"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 루트 전체 레이아웃 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/route_area"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 루트 영역 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_white_rectangle_15"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- 루트 UI 배경 이미지 -->
+            <ImageView
+                android:id="@+id/route_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 몇일차 여행 상단 -->
+            <FrameLayout
+                android:id="@+id/route_count_container"
+                android:layout_width="78dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/drawable_shadow"
+                android:elevation="5dp"
+                app:layout_constraintStart_toStartOf="@id/route_background"
+                app:layout_constraintTop_toTopOf="@id/route_background"
+                android:clickable="true">
+
+                <!-- 여행 바 이미지 -->
+                <ImageView
+                    android:id="@+id/route_count_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawable_rounded_rectangle30"
+                    android:scaleType="centerCrop" />
+
+                <!-- 여행 텍스트 - 날짜와 일차 표시 -->
+                <TextView
+                    android:id="@+id/daytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="18dp"
+                    android:text="1"
+                    android:layout_marginTop="0dp"
+                    android:textSize="15sp"
+                    android:textColor="#FF8F8F8F"/>
+
+                <TextView
+                    android:id="@+id/day_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:text="일차"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#FF8F8F8F"
+                    android:textSize="15sp"/>
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                app:layout_constraintTop_toBottomOf="@id/route_count_container"
+                app:layout_constraintBottom_toBottomOf="@id/route"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/middle_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+                    <!-- 깃발과 텍스트가 동적으로 추가될 공간 -->
+                </androidx.constraintlayout.widget.ConstraintLayout >
+            </HorizontalScrollView>
+
+            <!-- 여행 자세히 보기 (중앙 하단에 고정) -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_route"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:elevation="130dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- 이미지 배경 -->
+                <ImageView
+                    android:id="@+id/detail_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                    <!--android:background="@drawable/drawable_skyblue_rectangle_15_half_reverse"-->
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/day_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="1"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        />
+<!--
+                    <TextView
+                        android:id="@+id/ment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="일차 여행 자세히 보기"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/day_time"/>
+
+-->
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- 여행 텍스트 - 날짜와 일차 여행 자세히 보기 텍스트 -->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

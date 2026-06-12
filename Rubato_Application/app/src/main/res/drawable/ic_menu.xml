@@ -1,0 +1,15 @@
+<!--메뉴 아이콘-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="42.00dp"
+    android:height="42.00dp"
+    android:viewportWidth="42"
+    android:viewportHeight="42">
+
+    <!-- 아이콘배경 - 흰색원 -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M0 21c0-11.6 9.4-21 21-21h0c11.6 0 21 9.4 21 21v0c0 11.6-9.4 21-21 21h0c-11.6 0-21-9.4-21-21z"/>
+
+    <!-- 메뉴 수평선 -->
+    <path android:fillColor="#FF625B71"
+        android:pathData="M12 27v-2h18v2H12Zm0-5v-2h18v2H12Zm0-5v-2h18v2H12Z"/>
+</vector>

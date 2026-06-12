@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#60D8FF">
+
+    <item android:id="@android:id/mask">
+        <color android:color="#60D8FF"/> <!-- 클릭 시 보여질 색상 -->
+    </item>
+</ripple>
