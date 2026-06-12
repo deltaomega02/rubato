@@ -14,6 +14,9 @@
 ## 스택
 Android(Java, Retrofit) · PHP · MySQL · OpenAI GPT-4o · Google Gemini · Naver Map API
 
+## 데모
+전체 시연 영상과 기능별 데모 클립, 설치용 APK는 [Releases v1.0](https://github.com/deltaomega02/rubato/releases/tag/v1.0)에서 받을 수 있다.
+
 ## 구조
 - `Rubato_Application/` — Android 앱
 - `Rubato_Server/` — PHP API 서버
