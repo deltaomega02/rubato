@@ -26,8 +26,8 @@
 | 클라이언트 | Android (Java), Retrofit2 | 네이티브 앱, REST 통신 |
 | 지도 | Naver Map SDK / API | 경로 마커·동선 시각화, 장소 검색 |
 | 서버 | PHP, MySQL | REST API, 회원·일정 데이터 저장 |
-| AI | OpenAI GPT-4o | 일정의 논리적 구성 (동선·일자 배분) |
-| AI | Google Gemini (검색 통합) | 실시간 정보 질의 (영업시간, 주차 등) |
+| AI | OpenAI **GPT-4o / GPT-4o-mini** | 일정의 논리적 구성은 4o, 라우팅 판정·장소 요약은 mini |
+| AI | Google **Gemini 1.5 Pro** (검색 grounding) | 실시간 정보 질의 (영업시간, 주차 등) |
 
 ## 동작 방식
 
@@ -47,12 +47,18 @@
 
 ```
 [chat_main.php] 사용자 메시지 수신
-  ├─ 일정 구성·수정 질의  → GPT-4o          (논리적 일정 재구성)
-  └─ 실시간 정보 질의     → Gemini (검색 통합) (chat_search.php)
+  │  ← 어느 쪽인지 판정하는 것 자체는 GPT-4o-mini (싼 모델로 충분한 분류 작업)
+  ├─ 일정 구성·수정 질의  → GPT-4o          (auto_route.php / chat_route.php / save_route.php)
+  └─ 실시간 정보 질의     → Gemini 1.5 Pro  (chat_search.php, 검색 grounding)
 ```
 
 검증된 GPT 일정 생성 프롬프트는 유지하면서, 최신 정보가 필요한 질의만 Gemini의
-검색 grounding으로 보내는 역할 분담 구조. 모델 교체가 아니라 **작업별 최적 모델 배치**로 해결했다.
+검색 grounding으로 보낸다. 모델 교체가 아니라 **작업별 최적 모델 배치**로 해결했다.
+
+여기에 한 층 더 있다 — **판정·요약처럼 가벼운 작업은 `gpt-4o-mini`, 실제 일정 생성처럼
+품질이 필요한 작업만 `gpt-4o`** 로 나눴다. 라우팅 판정(`chat_main.php`), 장소 요약
+(`get_place.php`), 재추천(`recomment.php`)이 mini 쪽이다. 모든 호출을 4o 로 보냈다면
+비용이 세 배 이상 났을 구조다.
 
 ### 3. 서버 API 구성
 
