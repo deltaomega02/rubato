@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitegray">#FFD9D9D9</color>
+    <color name="darkgray">#FF4F4F4F</color>
+    <color name="skyblue_light">#CCE0F5</color>
+    <color name="blue">#3A8FB7</color>
+    <color name="skyblue">#B3D4E0</color>
+    <color name="default_background_color">#F0F0F0</color> <!-- 기본 배경색 -->
+    <color name="clicked_background_color">#D9D9D9</color> <!-- 클릭 시 배경색 -->
+    <color name="gray">#808080</color>
+
+    <color name="card_bg">#FFFFFF</color>
+    <color name="number_bg">#E8F5FF</color>
+    <color name="number_text">#2196F3</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#757575</color>
+    <color name="icon_color">#9E9E9E</color>
+    <color name="distance_bg">#F5F5F5</color>
+
+    <color name="mainColor">#2196F3</color>
+    <color name="mainColorLight">#1A2196F3</color>
+
+    <!-- 태그 배경색 (연한 민트색) -->
+    <color name="tagBackground">#E6F3F0</color>
+    <!-- 태그 텍스트 색상 (진한 민트색) -->
+    <color name="tagText">#2A9D8F</color>
+
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray700">#616161</color>
+    <color name="gray900">#212121</color>
+
+    <color name="pastel_blue">#E3F2FD</color>
+    <color name="pastel_blue_dark">#64B5F6</color>
+    <color name="background_light">#F8F9FA</color>
+
+</resources>    

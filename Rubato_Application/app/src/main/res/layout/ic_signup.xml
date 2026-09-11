@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F8FA">
+
+            <!-- 닫기 버튼 -->
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_x_mark"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- 로고 이미지 -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_rubato1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp" />
+
+            <!-- 아이디 입력 필드 -->
+            <EditText
+                android:id="@+id/editTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="아이디/이메일"
+                android:inputType="textEmailAddress"
+                android:padding="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/logoImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- 인증번호 필드 -->
+            <EditText
+                android:id="@+id/verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="인증번호"
+                android:background="@drawable/edittext_background"
+                android:padding="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- 이름 입력 필드 -->
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름"
+                android:background="@drawable/edittext_background"
+                android:padding="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/verification_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- 비밀번호 필드 -->
+            <EditText
+                android:id="@+id/pwdtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호"
+                android:background="@drawable/edittext_background"
+                android:padding="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/editname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- 비밀번호 확인 필드 -->
+            <EditText
+                android:id="@+id/checkpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호 확인"
+                android:background="@drawable/edittext_background"
+                android:padding="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/pwdtext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- 가입하기 버튼 -->
+            <android.widget.Button
+                android:id="@+id/signupbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_background"
+                android:text="인증하기"
+                android:textColor="#FF676767"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkpwd" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

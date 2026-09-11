@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- 배경색 (흰색) -->
+    <stroke
+        android:width="2dp"
+        android:color="#CCCCCC" /> <!-- 테두리색 (연한 회색) -->
+    <corners android:radius="12dp" /> <!-- 둥근 모서리 반경 -->
+    <padding
+        android:left="8dp"
+        android:top="4dp"
+        android:right="8dp"
+        android:bottom="4dp" /> <!-- 내부 여백 -->
+</shape>

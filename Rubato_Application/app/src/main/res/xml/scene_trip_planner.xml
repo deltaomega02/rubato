@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="300">
+        <KeyFrameSet>
+            <!-- 지도 영역 숨기기 -->
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="50"
+                motion:motionTarget="@id/map_container" />
+            <KeyAttribute
+                android:visibility="gone"
+                motion:framePosition="50"
+                motion:motionTarget="@id/map_container" />
+
+            <!-- 여행 정보 영역 숨기기 -->
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="50"
+                motion:motionTarget="@id/date_bar" />
+            <KeyAttribute
+                android:visibility="gone"
+                motion:framePosition="50"
+                motion:motionTarget="@id/date_bar" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <!-- 시작 상태 -->
+        <Constraint
+            android:id="@+id/date_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/top_bar"
+            android:visibility="visible"
+            android:alpha="1" />
+
+        <Constraint
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/date_bar"
+            android:visibility="visible"
+            android:alpha="1" />
+
+        <Constraint
+            android:id="@+id/day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/map_container" />
+
+        <Constraint
+            android:id="@+id/Plan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/day_layout"
+            motion:layout_constraintBottom_toTopOf="@id/Add_region" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <!-- 확장된 상태 -->
+        <Constraint
+            android:id="@+id/date_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/top_bar"
+            android:visibility="gone"
+            android:alpha="0" />
+
+        <Constraint
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/date_bar"
+            android:visibility="gone"
+            android:alpha="0" />
+
+        <Constraint
+            android:id="@+id/day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+        <Constraint
+            android:id="@+id/Plan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintTop_toBottomOf="@id/day_layout"
+            motion:layout_constraintBottom_toTopOf="@id/Add_region" />
+    </ConstraintSet>
+
+</MotionScene>

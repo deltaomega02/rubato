@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="300dp"
+    android:layout_marginBottom="89dp"
+    android:gravity="left|top"
+    android:orientation="vertical">
+
+    <!-- 첫 번째 FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="58.2dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="숙련된 자동 여행 이용자"
+            android:textColor="#FF000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="AI 추천 경로로 여행하기"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="(4/10)"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="68dp"
+             android:src="@drawable/drawable_skyblue_bar" />
+
+    </FrameLayout>
+
+    <!-- 두 번째 FrameLayout -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="58.2dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="숙련된 자동 여행 이용자"
+            android:textColor="#FF000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="AI 추천 경로로 여행하기"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="(4/10)"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/drawable_skyblue_bar" />
+    </FrameLayout>
+
+    <!-- 세 번째 FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="58.2dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="숙련된 자동 여행 이용자"
+            android:textColor="#FF000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="AI 추천 경로로 여행하기"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="(4/10)"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/drawable_skyblue_bar" />
+    </FrameLayout>
+
+    <!-- 네 번째 FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="58.2dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="숙련된 자동 여행 이용자"
+            android:textColor="#FF000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="AI 추천 경로로 여행하기"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginRight="98.11dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="(4/10)"
+            android:textColor="#FF858585"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/drawable_skyblue_bar" />
+    </FrameLayout>
+
+    <!-- 더보기 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+         android:gravity="center"
+        android:text="더보기"
+        android:textColor="#FF858585"
+        android:textSize="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introductory2">
+
+    <!-- 로고 -->
+    <!-- 로티 애니메이션 -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 바 이미지 -->
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/lottie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 로고 텍스트 -->
+    <ImageView
+        android:id="@+id/appName"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintTop_toBottomOf="@id/bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 미니 로고 -->
+    <ImageView
+        android:id="@+id/miniLogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 환영 메시지 및 초기화 -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="24sp"
+        android:textColor="#FF000000"
+        app:layout_constraintTop_toBottomOf="@id/miniLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/letgo"
+        android:layout_marginTop="16dp" />
+
+    <!-- 다음 단계로 이동하는 버튼 -->
+    <android.widget.Button
+        android:id="@+id/letgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계속하기"
+        android:textStyle="bold"
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        android:layout_marginBottom="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

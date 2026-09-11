@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/drawable_rounded_rectangle300"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/region_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/drawable_gray_circle"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/region_name"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="16.5dp"
+        android:layout_marginBottom="-0.5dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#FF000000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/popular_spot"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="36.5dp"
+        android:layout_marginBottom="13.5dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#FF000000"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/remove_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="end|center_vertical"
+        android:src="@drawable/ic_checked_circle"
+        android:scaleType="centerInside" />
+
+</FrameLayout>

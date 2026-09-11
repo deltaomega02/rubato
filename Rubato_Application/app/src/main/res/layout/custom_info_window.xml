@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:elevation="5dp"
+    android:layout_gravity="center">
+
+    <!-- 장소 이름 -->
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- 평점 -->
+    <TextView
+        android:id="@+id/place_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: 4.5"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- 리뷰 수 -->
+    <TextView
+        android:id="@+id/place_review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews: 123"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- 일차 표시 -->
+        <TextView
+            android:id="@+id/day_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1일차"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:background="#E3F2FD"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="1dp"/>
+
+        <!-- 장소 목록 -->
+        <TextView
+            android:id="@+id/places_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#37474F"
+            android:lineSpacingExtra="6dp"
+            android:paddingStart="4dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

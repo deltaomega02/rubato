@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TripPlanner2">
+
+    <!-- 상단 영역 -->
+    <FrameLayout
+        android:id="@+id/top_area"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_rubato1"/>
+
+    </FrameLayout>
+
+    <!-- 여행 관련 텍스트 영역 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/travel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_area"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_skyblue_rectangle_15"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="5dp">
+
+        <!-- "저는 여행을" -->
+        <TextView
+            android:id="@+id/txt_plan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저는 여행을"
+            android:textColor="@color/darkgray"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 첫 번째 사각형(~부터) -->
+        <TextView
+            android:id="@+id/img_rectangle1"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawable_gray_rectangle"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_plan1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- "부터" -->
+        <TextView
+            android:id="@+id/txt_plan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부터"
+            android:textStyle="bold"
+            android:textColor="@color/darkgray"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/img_rectangle1"
+            app:layout_constraintTop_toTopOf="@id/img_rectangle1"
+            app:layout_constraintBottom_toBottomOf="@id/img_rectangle1"
+            android:layout_marginStart="10dp"/>
+
+        <!-- 두 번째 사각형(~까지) -->
+        <TextView
+            android:id="@+id/img_rectangle2"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawable_gray_rectangle"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/txt_plan2"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@id/img_rectangle1"/>
+
+        <!-- "까지" -->
+        <TextView
+            android:id="@+id/txt_plan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="까지"
+            android:textColor="@color/darkgray"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/img_rectangle2"
+            app:layout_constraintTop_toTopOf="@id/img_rectangle2"
+            app:layout_constraintBottom_toBottomOf="@id/img_rectangle2"
+            android:layout_marginStart="10dp"/>
+
+        <!-- "갈 예정이에요" -->
+        <TextView
+            android:id="@+id/txt_plan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="갈 예정이에요!"
+            android:textColor="@color/darkgray"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_rectangle1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 전체를 감싸는 카드뷰 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toBottomOf="@id/travel_container"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_skyblue_rectangle_15">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btn_next"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mcv_showOtherDates="all"
+                    app:mcv_selectionColor="@color/skyblue"
+                    android:elevation="15dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 하단 동적 메시지 버튼 -->
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/drawable_white_rectangle_15"
+                android:gravity="center"
+                android:text="고민중이에요..."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="25dp"
+                android:elevation="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

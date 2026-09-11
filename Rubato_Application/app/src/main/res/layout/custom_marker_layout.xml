@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/marker_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <!-- 숫자 표시 컨테이너 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/marker_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 장소명 -->
+        <TextView
+            android:id="@+id/marker_place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- 마커 하단 삼각형 -->
+    <View
+        android:layout_width="16dp"
+        android:layout_height="8dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="-8dp"
+        android:background="@drawable/marker_triangle"/>
+
+</androidx.cardview.widget.CardView>
